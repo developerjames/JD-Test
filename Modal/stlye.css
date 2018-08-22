@@ -1,0 +1,31 @@
+/* # Modal
+   ========================================================================== */
+
+.o-modal {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.o-modal__inner {
+    height: fit-content;
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 500;
+}
+
+.o-modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

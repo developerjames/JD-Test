@@ -1,0 +1,18 @@
+<!-- The below link can be separate from here, however, it will need the data-modal-id attribute included in order for the functionality to execute. -->
+<a href="javascript:void(0)" class="js-modal-open" data-modal-id="js-modal"></a>
+
+<div id="js-modal" class="o-modal js-modal-popup" style="display:none;">
+    <div class="o-modal__inner">
+        <div class="o-modal__close js-modal-close">x</div>
+        <div class="c-modal__content">
+            <!-- Add content here -->
+        </div>
+    </div>
+</div>
+
+<!-- NOTE:
+
+If there are multiple modals on one page then simply add a prefix on the `data-modal-id`, for example, `data-modal-id="js-modal-1"`,
+and ensure the same value is added to the `id` of `js-modal`.
+
+-->
