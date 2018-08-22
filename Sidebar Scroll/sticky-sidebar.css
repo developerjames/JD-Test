@@ -1,0 +1,30 @@
+.span4{
+    width:25%;
+    float:left;
+}
+.span8{
+    width:75%;
+    float:left;
+}
+
+
+.main-content{
+    overflow:hidden;
+}
+
+.sidebar{
+    will-change:  min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar__inner{
+        position:inherit !important;
+        transform: inherit !important;
+    }
+}
